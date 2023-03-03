@@ -1,12 +1,20 @@
-import React from 'react'
-import { Navbar , Dashboard } from '../components'
+import { useContext } from 'react'
+import { Navbar, Dashboard, FilterDashboard } from '../components'
+import { SearchContext } from '../search_context/SearchContext'
 
 
 const Home = () => {
+  const { search } = useContext(SearchContext)
   return (
     <>
-      <Navbar/>
-      <Dashboard/>
+      <Navbar />
+      {
+        search.length === 0
+          ?
+          <Dashboard />
+          :
+          <FilterDashboard />
+      }
     </>
   )
 }
