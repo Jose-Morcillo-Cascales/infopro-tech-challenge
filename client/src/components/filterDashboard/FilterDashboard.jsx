@@ -15,6 +15,11 @@ const FilterDashboard = () => {
     const filterEmployee = data?.filter(
       employee => 
           employee.name.toLowerCase().includes(search.toLowerCase())
+          ||
+          employee.employee_code.toLowerCase().includes(search.toLowerCase())
+          ||
+          employee.date_of_discharge.toLowerCase().includes(search.toLowerCase())
+          
     )
     setSearchResults(filterEmployee)
   }, [search,data])
