@@ -1,0 +1,15 @@
+{
+    "employees":
+    [
+        {"id":1, "employee_code":"XMV12", "name":"Rack", "password":"1234", "date_of_discharge":"1996-10-07", "active_working":0},
+        {"id":2, "employee_code":"XZV92", "name":"John", "password":"1234", "date_of_discharge":"1996-11-18", "active_working":1},
+        {"id":3, "employee_code":"LPO26", "name":"Leila", "password":"1234", "date_of_discharge":"1996-12-19", "active_working":0},
+        {"id":4, "employee_code":"LWV98", "name":"Richard", "password":"1234", "date_of_discharge":"1995-11-20", "active_working":1},
+        {"id":5, "employee_code":"MLO16", "name":"Susan", "password":"1234", "date_of_discharge":"1998-11-21", "active_working":1},
+        {"id":6, "employee_code":"XMR35", "name":"Brad", "password":"1234", "date_of_discharge":"2000-11-22", "active_working":0},
+        {"id":7, "employee_code":"NBG23", "name":"Neil", "password":"1234", "date_of_discharge":"2001-10-24", "active_working":1},
+        {"id":8, "employee_code":"LWV97", "name":"Sandra", "password":"1234", "date_of_discharge":"1996-09-30", "active_working":1},
+        {"id":9, "employee_code":"LWV12", "name":"Homer", "password":"1234", "date_of_discharge":"1985-01-15", "active_working":0},
+        {"id":10, "employee_code":"LWS97", "name":"Jack", "password":"1234", "date_of_discharge":"1987-11-28", "active_working":1}
+    ]
+}
