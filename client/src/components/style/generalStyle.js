@@ -40,3 +40,20 @@ export const ColumnStyle = styled.div`
     width:100px;
    
 `
+export const ButtonPrimaryStyle = styled.button`
+    color: black;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    border-radius: calc(40px * .5);
+    cursor: pointer;
+    margin: 10px auto;
+    transition: 300ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+    `
