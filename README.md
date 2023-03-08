@@ -16,7 +16,7 @@ program.
 _First clone the repository_
 
 ```
-git clone https://github.com/AlejandroLuisHC/final-project-MERN
+git clone https://github.com/Jose-Morcillo-Cascales/infopro-tech-challenge.git
 ```
 
 _Then run 'npm install' in the base folder_
