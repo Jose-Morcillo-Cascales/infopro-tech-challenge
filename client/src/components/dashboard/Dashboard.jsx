@@ -9,16 +9,16 @@ const Dashboard = ({ seePass, setSeePass }) => {
   })
   const { workers, setWorkers } = useContext(FilterContext)
   const [sortDate, setSortDate] = useState(false)
-  const [resultSort ,setResultSort] =useState([])
-  useEffect(()=>{
+  const [resultSort, setResultSort] = useState([])
+  useEffect(() => {
     sortDate ?
-    setResultSort( [].concat(data)
-    .sort((a,b)=>new Date(a.date_of_discharge).getTime()>new Date(b.date_of_discharge).getTime()? -1 : 1))
-    :
-    setResultSort( [].concat(data)
-    .sort((a,b)=>new Date(a.date_of_discharge).getTime()>new Date(b.date_of_discharge).getTime()? -1 : 1).reverse())
-  },[sortDate])
-  
+      setResultSort([].concat(data)
+        .sort((a, b) => new Date(a.date_of_discharge).getTime() > new Date(b.date_of_discharge).getTime() ? -1 : 1))
+      :
+      setResultSort([].concat(data)
+        .sort((a, b) => new Date(a.date_of_discharge).getTime() > new Date(b.date_of_discharge).getTime() ? -1 : 1).reverse())
+  }, [sortDate])
+
   return (
 
     <DashboardStyle>
@@ -33,7 +33,7 @@ const Dashboard = ({ seePass, setSeePass }) => {
           }
         </ColumnStyle>
         <ColumnStyle>
-        {sortDate ?
+          {sortDate ?
             <ButtonPrimaryStyle onClick={() => setSortDate(false)}> Date of discharge ▲</ButtonPrimaryStyle>
             :
             <ButtonPrimaryStyle onClick={() => setSortDate(true)}> Date of discharge ▼</ButtonPrimaryStyle>
@@ -50,7 +50,7 @@ const Dashboard = ({ seePass, setSeePass }) => {
       </RowStyle>
       {
         workers ?
-        resultSort?.filter(employee => employee.active_working === 1).map(employee => {
+          resultSort?.filter(employee => employee.active_working === 1).map(employee => {
             return <RowStyle key={employee.id}>
               <ColumnStyle>{employee.employee_code}</ColumnStyle>
               <ColumnStyle>{employee.name}</ColumnStyle>
